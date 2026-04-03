@@ -8,3 +8,23 @@ body {
   background-color: #151313;
 }
 
+.heart {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: relative;
+  transform: rotate(45deg);
+  animation: heart 0.8s infinite;
+}
+.heart::before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  transform: translatey(-50%);
+  border-radius: 50%;
+}
+
